@@ -20,9 +20,15 @@ Kali Linux (192.168.56.20) <--> VirtualBox Host-Only Network (192.168.56.0/24) <
 ## Troubleshooting
 While configuring the static IP on Kali, `sudo ifdown eth0 && sudo ifup eth0` returned 
 `Error: ipv4: Address not found`, and `systemctl restart networking` did not apply the 
-config either. This pointed to a conflict between the legacy `ifupdown`/`interfaces` 
-method and NetworkManager, which was actively managing the interface on this Kali build. 
-[Add your resolution here once you confirm the nmcli fix — what you ran and why it worked.]
+config either. Running `nmcli con show` confirmed NetworkManager was actively managing 
+`eth0` via its own connection profile, conflicting with the legacy `/etc/network/interfaces` 
+method. Resolved by configuring the static IP directly through NetworkManager:
+
+    sudo nmcli con mod "eth0" ipv4.addresses 192.168.56.20/24
+    sudo nmcli con mod "eth0" ipv4.method manual
+    sudo nmcli con up "eth0"
+
+Verified the configuration persisted after a reboot.
 
 ## Result
 Ubuntu Server (192.168.56.10) and Kali Linux (192.168.56.20) successfully communicate 
