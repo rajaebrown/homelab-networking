@@ -29,6 +29,12 @@ Ubuntu Server (192.168.56.10) and Kali Linux (192.168.56.20) successfully commun
 over the isolated host-only network, confirmed via ping with 0% packet loss.
 
 ## Screenshots
-- `screenshots/ubuntu-ip-a.png` — Ubuntu interface with static IP assigned
-- `screenshots/kali-ip-a.png` — Kali interface with static IP assigned  
-- `screenshots/ping-success.png` — Successful ping between both VMs
+
+**Ubuntu Server — interface with static IP assigned**
+![Ubuntu ip a output](screenshots/ubuntu-ip-a.png)
+
+**Kali Linux — interface with static IP assigned**
+![Kali ip a output](screenshots/kali-ip-a.png)
+
+**Successful ping between both VMs**
+![Ping success](screenshots/ping-success.png)
