@@ -12,3 +12,5 @@ isolated host-only virtual networking.
 | # | Lab | Focus | Status |
 |---|-----|-------|--------|
 | 01 | [Host-Only Lab Setup](labs/01-host-only-lab-setup/README.md) | VirtualBox networking, static IP config, Ubuntu/Kali connectivity | ✅ Complete |
+| 02 | [ARP Spoofing Attack & Analysis](labs/02-arp-spoofing/README.md) | ARP cache poisoning, Wireshark packet analysis, attack detection | ✅ Complete |
+
