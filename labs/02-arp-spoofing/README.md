@@ -80,8 +80,18 @@ so any host can claim to own any IP on the local segment. Real-world mitigations
   domain
 
 ## Screenshots
-- `screenshots/baseline-arp-filtered.png` — Normal ARP traffic before the attack
-- `screenshots/arpspoof-terminal.png` — Attack command running on Kali
-- `screenshots/arp-spoof-filtered.png` — Wireshark capture of the forged reply flood
-- `screenshots/ubuntu-ip-neigh-before.png` — Ubuntu's clean ARP table
-- `screenshots/ubuntu-ip-neigh-during.png` — Ubuntu's poisoned ARP table showing the spoofed entry
+
+**Baseline — normal ARP traffic before the attack**
+![Baseline ARP capture](screenshots/baseline-arp-filtered.png)
+
+**Attack command running on Kali**
+![arpspoof terminal output](screenshots/arpspoof-terminal.png)
+
+**Wireshark capture of the forged reply flood**
+![ARP spoof Wireshark capture](screenshots/arp-spoof-filtered.png)
+
+**Ubuntu's ARP table before the attack**
+![Ubuntu ip neigh before](screenshots/ubuntu-ip-neigh-before.png)
+
+**Ubuntu's ARP table during the attack — poisoned entry**
+![Ubuntu ip neigh during](screenshots/ubuntu-ip-neigh-during.png)
