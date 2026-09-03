@@ -91,9 +91,7 @@ so any host can claim to own any IP on the local segment. Real-world mitigations
 ![ARP spoof Wireshark capture](screenshots/arp-spoof-filtered.png)
 
 **Ubuntu's ARP table before the attack**
-![Ubuntu ip neigh before]
-(screenshots/ubuntu-ip-neigh-before.png)
+![Ubuntu ip neigh before](screenshots/ubuntu-ip-neigh-before.png)
 
 **Ubuntu's ARP table during the attack — poisoned entry**
-![Ubuntu ip neigh during]
-(screenshots/ubuntu-ip-neigh-during.png)
+![Ubuntu ip neigh during](screenshots/ubuntu-ip-neigh-during.png)
